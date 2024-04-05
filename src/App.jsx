@@ -13,29 +13,9 @@ import { ScrollLink } from 'react-scroll';
 function App() {
   return (
     <div className="App">
-      <Navb />
-      <nav className="nav-bar">
-          <div>
-           Home
-           
-          </div>
-          &#124;
-          <div>
-            Courses
-          </div>
-          &#124;
-          <div>
-            About Us 
-          </div>
-          &#124;
-          <div>
-            Contact Us 
-          </div>
-          &#124;
-          <div>
-            FAQ
-          </div>
-        </nav>
+      <header className="App-header">
+        <h1>Coaching Website</h1>
+      </header>
       <CoachingSection />
       <CoachingCardContainer />
       <AboutUs/>
