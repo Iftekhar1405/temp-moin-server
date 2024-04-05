@@ -6,6 +6,7 @@ const CoachingSection = () => {
   return (
     <section className="coaching-section">
       <div className="container">
+       
         <h2>Coaching Services</h2>
         <p>Here you can find information about our coaching services.</p>
         <Link

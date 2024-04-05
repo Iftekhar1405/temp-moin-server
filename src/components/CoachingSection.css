@@ -1,9 +1,10 @@
 /* CoachingSection.css */
 
 .coaching-section {
-    padding: 50px 0;
+    
     background-color: #f0f0f0;
     text-align: center;
+    z-index: 1020;
   }
   
   .container {
@@ -49,5 +50,143 @@
   flex-wrap: wrap; /* Allow cards to wrap to the next row */
   margin-top: 50px;
 }
+
+.about-us-card {
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin: 20px;
+  padding: 20px;
+  background-color: #ffcad4;
+}
+
+.about-us-card-header {
+  background-color: #e56b6f;
+  border-bottom: 1px solid #ccc;
+  padding: 10px;
+  text-align: center;
+}
+
+.about-us-card-body {
+  padding: 20px;
+}
+
+.about-us-highlight {
+  color: #007bff; /* Or any other color you prefer */
+}
+
+.about-us-teacher-image {
+  width: 100%;
+  max-width: 300px;
+  border-radius: 8px;
+  margin-top: 10px;
+}
+
+.contact-card {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin: 20px;
+  padding: 20px;
+  background-color: #f4d58d;
+}
+
+.contact-header {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.contact-header h2 {
+  color: #001427; /* Or any other color you prefer */
+}
+
+.contact-body form {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+label {
+  color: #001427; /* Or any other color you prefer */
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  outline: none;
+}
+
+.submit-button {
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  background-color: #001427; /* Or any other color you prefer */
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.submit-button:hover {
+  background-color: #008b74; /* Or any other color you prefer */
+}
+.faq-container {
+  margin: 20px;
+  background-color: #b7e4c7;
+}
+
+.faq-list {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.faq-item {
+  border-bottom: 1px solid #ddd;
+}
+
+.faq-question {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 20px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.faq-question:hover {
+  background-color: #008b74;
+}
+
+.toggle-icon {
+  font-size: 1.2em;
+}
+
+.active .faq-question {
+  background-color: #007bff;
+  color: white;
+}
+
+.active .toggle-icon {
+  transform: rotate(-45deg);
+}
+
+.faq-answer {
+  padding: 10px 20px;
+}
+
+.question-text {
+  flex: 1;
+}
+
+.answer-text {
+  margin-top: 10px;
+}
+
 
 

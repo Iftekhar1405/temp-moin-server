@@ -29,7 +29,7 @@ const CoachingCardContainer = () => {
       {cardsData.map((card, index) => (
         <CoachingCard
           key={index}
-          imageurl = {imageurl}
+          imageurl = {card.imageurl}
           title={card.title}
           description={card.description}
           color={card.color}
