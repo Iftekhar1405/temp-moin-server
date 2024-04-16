@@ -1,10 +1,10 @@
-import React from 'react';
+import React, { forwardRef } from 'react';
 import'./CoachingSection.css';
 
-const ContactUs = () => {
+const ContactUs = forwardRef((props,ref) => {
     return (
-        <div className="contact-card">
-            <div className="contact-header">
+        <div className="contact-card" >
+            <div className="contact-header" ref={ref}>
                 <h2>Contact Us</h2>
             </div>
             <div className="contact-body">
@@ -26,6 +26,6 @@ const ContactUs = () => {
             </div>
         </div>
     );
-}
+})
 
-export default ContactUs;
+export default (ContactUs) ;

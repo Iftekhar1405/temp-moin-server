@@ -26,3 +26,10 @@ code {
   height: 10vh;
   border-radius: 0 0 20px 20px;
 }
+.button{
+  background-color:#CCCCFF ;
+  font-size: large;
+  border: 0;
+  height: inherit;
+  
+}

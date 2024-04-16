@@ -1,5 +1,5 @@
 // App.js
-import React from 'react';
+import React, { useRef } from 'react';
 import './App.css';
 import CoachingSection from './components/CoachingSection';
 import CoachingCardContainer from './components/CoachingCardContainer';
@@ -11,6 +11,10 @@ import { ScrollLink } from 'react-scroll';
 
 
 function App() {
+  const ref = useRef(null)
+  const handleclick = ()=>{
+    ref.current.scrollIntoView({behavior:'smooth'})
+  }
   return (
     <div className="App">
       <Navb />
@@ -28,8 +32,8 @@ function App() {
             About Us 
           </div>
           &#124;
-          <div>
-            Contact Us 
+          <div className='button'>
+            <button onClick={handleclick} className='button'>Contact Us </button>
           </div>
           &#124;
           <div>
@@ -39,7 +43,7 @@ function App() {
       <CoachingSection />
       <CoachingCardContainer />
       <AboutUs/>
-      <ContactUs/>
+      <ContactUs ref={ref}/>
       <FAQ/>
     </div>
   );
